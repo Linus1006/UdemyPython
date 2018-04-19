@@ -44,7 +44,7 @@ print(A.dot(A_inv))
 B = np.array([[1,2],[3,4]])
 print(linear.det(B))
 '''
-'''numpy模組建立矩陣'''
+'''numpy模組建立矩陣
 import numpy as np
 my_array = np.array([[1,2,3],[4,5,6]])
 print(my_array)
@@ -62,5 +62,12 @@ print(my_slice_arr)
 #建立0~1隨機2*3矩陣
 my_random_arr = np.random.random((10,10))
 print(my_random_arr)
+'''
+import numpy as np
+a = np.arange(25).reshape((5,5))
+b = np.random.random((5,5))
+
+print(a)
+print(b)
 
 
