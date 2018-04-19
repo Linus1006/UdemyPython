@@ -66,8 +66,9 @@ print(my_random_arr)
 import numpy as np
 a = np.arange(25).reshape((5,5))
 b = np.random.random((5,5))
-
 print(a)
 print(b)
-
+print("a+b",a+b)
+print("a-b:",a-b)
+print("a*b:",a*b)
 
