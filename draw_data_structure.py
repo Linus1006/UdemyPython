@@ -62,8 +62,7 @@ print(my_slice_arr)
 #建立0~1隨機2*3矩陣
 my_random_arr = np.random.random((10,10))
 print(my_random_arr)
-'''
-import numpy as np
+#矩陣運算
 a = np.arange(25).reshape((5,5))
 b = np.random.random((5,5))
 print(a)
@@ -71,4 +70,29 @@ print(b)
 print("a+b",a+b)
 print("a-b:",a-b)
 print("a*b:",a*b)
+print("a.b:",a.dot(b))
+'''
+'''#sin函數計算並畫圖
+import numpy as np
+import matplotlib.pyplot as plt
+x = np.arange(0, 3*np.pi, 0.011)
+y = np.sin(x)
+#plt.plot(x, y)
 
+mu = 2
+sigma = 0.5
+v = np.random.normal(mu, sigma, 10000)
+plt.hist(v, bins=500, normed=1)
+plt.show()
+'''
+'''輸入並更改矩陣維度
+import numpy as np
+a_10_3= np.zeros((10,3))
+print(a_10_3)
+a_3_10 = a_10_3.T
+print(a_10_3)
+b_5_6 = np.reshape(a_10_3,(5,6))
+print(b_5_6)
+c_5_1 = np.ravel(b_5_6)
+print(c_5_1)
+'''
